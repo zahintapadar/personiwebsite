@@ -86,7 +86,7 @@ const HeroSection = () => {
               <BoxReveal boxColor="#8b5cf6" duration={1.3}>
                 <div className="flex justify-center">
                   <button 
-                    onClick={() => window.open('https://github.com/falkon2/personify/releases/download/v2.5/Personify.apk', '_blank')}
+                    onClick={() => window.open('https://github.com/falkon2/personify/releases/download/v3.0/Personify.apk', '_blank')}
                     className="shadow-[inset_0_0_0_2px_#616467] text-black px-12 py-4 rounded-full tracking-widest uppercase font-bold bg-white transition duration-200 text-center active:scale-95 cursor-pointer"
                   >
                     Download
