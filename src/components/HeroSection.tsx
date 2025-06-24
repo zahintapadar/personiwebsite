@@ -99,7 +99,7 @@ const HeroSection = () => {
                 <div className="grid grid-cols-3 gap-4 sm:gap-6 max-w-xs mx-auto pt-4">
                   <div className="text-center">
                     <div className="text-xl sm:text-2xl font-bold flex items-center justify-center">
-                      <NumberTicker value={200000} className="text-white" />
+                      <NumberTicker value={285000000} className="text-white" />
                       <span className="text-violet-400 text-sm sm:text-xl">+</span>
                     </div>
                     <div className="text-xs text-violet-300">Training Data</div>
