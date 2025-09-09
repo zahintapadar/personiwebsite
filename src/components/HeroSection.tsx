@@ -50,7 +50,7 @@ const HeroSection = () => {
             <div className="space-y-4 sm:space-y-6 lg:space-y-8 order-1 text-center w-full flex flex-col items-center">
               {/* AI Badge */}
               <BoxReveal boxColor="#8b5cf6" duration={0.5}>
-                <div className="inline-flex items-center px-3 py-2 sm:px-4 rounded-full bg-violet-500/20 border border-violet-400/30 backdrop-blur-sm">
+                <div className="inline-flex items-center px-3 py-2 sm:px-4 rounded-full bg-violet-500/20 border border-violet-400/30 backdrop-blur-sm mt-8 sm:mt-0">
                   <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 mr-2 text-violet-300" />
                   <span className="text-xs sm:text-sm font-medium text-violet-200">AI-Powered Psychology</span>
                 </div>
