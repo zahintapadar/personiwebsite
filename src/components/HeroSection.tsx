@@ -21,7 +21,7 @@ export function Iphone15ProDemo() {
 
 const HeroSection = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative h-screen min-h-[700px] overflow-hidden flex items-center">
       {/* Black to Violet Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-black via-purple-950 to-violet-900" />
       
@@ -43,7 +43,7 @@ const HeroSection = () => {
 
       {/* Main Content Container */}
       <div className="relative z-10 min-h-screen flex items-center py-8 sm:py-12">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full h-full flex items-center">
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 lg:gap-8 items-center">
             
             {/* Text Content - First on Mobile */}
@@ -99,10 +99,11 @@ const HeroSection = () => {
                 <div className="grid grid-cols-3 gap-4 sm:gap-6 max-w-xs mx-auto pt-4">
                   <div className="text-center">
                     <div className="text-xl sm:text-2xl font-bold flex items-center justify-center">
-                      <NumberTicker value={285000000} className="text-white" />
+                      <NumberTicker value={500} className="text-white" />
+                      <span className="text-white">M</span>
                       <span className="text-violet-400 text-sm sm:text-xl">+</span>
                     </div>
-                    <div className="text-xs text-violet-300">Training Data</div>
+                      <div className="text-xs text-violet-300">Sample Exposures</div>
                   </div>
                   <div className="text-center">
                     <div className="text-xl sm:text-2xl font-bold flex items-center justify-center">
@@ -113,10 +114,10 @@ const HeroSection = () => {
                   </div>
                   <div className="text-center">
                     <div className="text-xl sm:text-2xl font-bold flex items-center justify-center">
-                      <NumberTicker value={4.9} decimalPlaces={1} className="text-white" />
-                      <span className="text-violet-400 text-sm sm:text-xl">★</span>
+                        <NumberTicker value={200} className="text-white" />
+                        <span className="text-violet-400 text-sm sm:text-xl">+</span>
                     </div>
-                    <div className="text-xs text-violet-300">Rating</div>
+                      <div className="text-xs text-violet-300">Reviews</div>
                   </div>
                 </div>
               </BoxReveal>
@@ -154,15 +155,23 @@ const HeroSection = () => {
             </div>
 
             {/* Phone Mockup - Second on Mobile, Closer */}
-            <div className="relative order-2 lg:order-2">
+            <div className="relative order-2 lg:order-2 w-full flex justify-center items-center">
               <BoxReveal boxColor="#8b5cf6" duration={0.8}>
-                <div className="relative flex justify-center">
+                <div className="relative flex justify-center items-center h-full">
                   {/* Glow Effect Behind Phone */}
                   <div className="absolute inset-0 bg-gradient-to-r from-violet-500/15 to-purple-500/15 rounded-full blur-2xl transform scale-110"></div>
-                  
-                  {/* iPhone Mockup */}
+                  {/* Responsive Mockup */}
                   <div className="relative transform hover:scale-105 transition-transform duration-500">
-                    <Iphone15ProDemo />
+                    <img
+                      src="/CleanShot_2025-09-09_at_16.37.49_2x-removebg-preview.png"
+                      alt="App Mockup Desktop"
+                      className="hidden sm:block w-full max-w-[340px] lg:max-w-[420px] xl:max-w-[500px]"
+                    />
+                    <img
+                      src="/mobile.png"
+                      alt="App Mockup Mobile"
+                      className="block sm:hidden w-full max-w-[220px]"
+                    />
                   </div>
                 </div>
               </BoxReveal>
