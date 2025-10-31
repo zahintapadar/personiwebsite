@@ -132,7 +132,7 @@ const HeroSection = () => {
               </BoxReveal>
 
               {/* Portfolio Button */}
-              <BoxReveal boxColor="#8b5cf6" duration={1.9}>
+              {/* <BoxReveal boxColor="#8b5cf6" duration={1.9}>
                 <div className="text-center pt-6">
                   <a 
                     href="https://zahintapadar.onrender.com" 
@@ -151,7 +151,7 @@ const HeroSection = () => {
                     </svg>
                   </a>
                 </div>
-              </BoxReveal>
+              </BoxReveal> */}
             </div>
 
             {/* Phone Mockup - Second on Mobile, Closer */}
